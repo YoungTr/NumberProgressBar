@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NumberProgressBar">
+        <attr name="currentValue" format="integer" />
+        <attr name="maxValue" format="integer" />
+        <attr name="unreachedBarColor" format="color" />
+        <attr name="reachedBarColor" format="color" />
+        <attr name="unreachedBarHeight" format="dimension" />
+        <attr name="reachedBarHeight" format="dimension" />
+        <attr name="numberTextSize" format="dimension" />
+        <attr name="numberTextColor" format="color" />
+        <attr name="textOffset" format="dimension" />
+        <attr name="numberTextVisibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+        <attr name="progressBarShape" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="circle" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>
