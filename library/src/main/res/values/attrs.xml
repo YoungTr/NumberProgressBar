@@ -10,6 +10,8 @@
         <attr name="numberTextSize" format="dimension" />
         <attr name="numberTextColor" format="color" />
         <attr name="textOffset" format="dimension" />
+        <attr name="minWidth" format="dimension" />
+        <attr name="minHeight" format="dimension" />
         <attr name="numberTextVisibility" format="enum">
             <enum name="visible" value="0" />
             <enum name="invisible" value="1" />
