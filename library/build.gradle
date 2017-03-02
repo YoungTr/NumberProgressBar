@@ -1,4 +1,22 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.novoda:bintray-release:0.3.4'
+    }
+}
+
+publish {
+    userOrg = 'youngtr'
+    groupId = 'com.youngtr.numberprogress'
+    artifactId = 'library'
+    publishVersion = '1.0.1'
+    website = 'https://github.com/YoungTr/NumberProgressBar'
+}
 
 android {
     compileSdkVersion 25
@@ -23,9 +41,6 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
     compile 'com.android.support:appcompat-v7:25.1.1'
     testCompile 'junit:junit:4.12'
 }
