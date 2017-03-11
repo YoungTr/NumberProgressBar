@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="progress_bar_color_red">#E74C3C</color>
+    <color name="progress_bar_unreached_bar_color_default_grey">#CCCCCC</color>
+    <color name="progress_bar_color_blue">#0099ff</color>
+    <color name="progress_bar_color_yellow">#FFFF00</color>>
+</resources>
