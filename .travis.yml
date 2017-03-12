@@ -5,5 +5,9 @@ android:
   - platform-tools
   - build-tools-25.0.2
   - android-25
-  - extra-andorid-support
+  - extra-android-support
   - extra
+  - extra-android-m2repository
+script:
+  - ./gradlew clean assembleDebug
+  - ./gradlew clean assembleRelease
