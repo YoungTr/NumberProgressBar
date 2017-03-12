@@ -15,8 +15,7 @@
 
     <com.youngtr.numberprogressbar.NumberProgressBar
         android:id="@+id/progress_horizontal_red"
-        style="@style/NumberProgressBar.Horizontal.Red"
-        android:layout_marginTop="20dp" />
+        style="@style/NumberProgressBar.Horizontal.Red" />
 
     <com.youngtr.numberprogressbar.NumberProgressBar
         android:id="@+id/progress_horizontal_blue"

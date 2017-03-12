@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
                 mCircleProgressBarBlue.setProgress(progress);
                 mCircleProgressBarYellow.setProgress(progress);
                 mCircleProgressBarRed.setProgress(progress);
-                mTimedHandler.sendEmptyMessageDelayed(0, 100);
+                mTimedHandler.sendEmptyMessageDelayed(0, 90);
             }
         }
     };
