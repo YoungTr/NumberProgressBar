@@ -10,3 +10,4 @@
 .idea/vcs.xml
 distribute-jcenter.sh
 .idea/misc.xml
+._*
