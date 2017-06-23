@@ -1,23 +1,15 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.novoda.bintray-release'
 
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath 'com.novoda:bintray-release:0.3.4'
-    }
-}
 
 publish {
     userOrg = 'youngtr'
-    groupId = 'com.youngtr.numberprogress'
-    artifactId = 'library'
+    groupId = 'com.youngtr'
+    artifactId = 'numberprogress'
     publishVersion = '1.0.1'
+    desc = 'A progress bar with both horizontal and circular styles'
     website = 'https://github.com/YoungTr/NumberProgressBar'
 }
-
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
