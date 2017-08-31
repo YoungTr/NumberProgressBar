@@ -5,7 +5,7 @@ A progress bar with both horizontal and circular styles. Inspired by [daimajia](
 
 ## Demo
 
-![NumberProgressBar](http://i.giphy.com/hkXSaSsA1hIKA.gif)
+![NumberProgressBar](https://github.com/YoungTr/NumberProgressBar/blob/master/gif/demo.gif)
 
 -----
 
