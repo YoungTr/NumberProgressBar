@@ -1,13 +1,19 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.novoda.bintray-release'
-
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.novoda:bintray-release:0.4.0'
+    }
+}
 
 publish {
     userOrg = 'youngtr'
     groupId = 'com.youngtr'
     artifactId = 'numberprogress'
-    publishVersion = '1.0.1'
-    desc = 'A progress bar with both horizontal and circular styles'
+    publishVersion = '1.0.2'
     website = 'https://github.com/YoungTr/NumberProgressBar'
 }
 android {
@@ -15,12 +21,10 @@ android {
     buildToolsVersion "25.0.2"
 
     defaultConfig {
-        minSdkVersion 14
+        minSdkVersion 8
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
-
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }
     buildTypes {
@@ -29,10 +33,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    lintOptions{
+        abortOnError false
+    }
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:25.1.1'
-    testCompile 'junit:junit:4.12'
 }

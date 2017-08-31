@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="NumberProgressBar">
+        <item name="maxValue">100</item>
+        <item name="currentValue">0</item>
+        <item name="unreachedBarHeight">0.75dp</item>
+        <item name="reachedBarHeight">1.75dp</item>
+        <item name="numberTextSize">10sp</item>
+        <item name="textOffset">3dp</item>
+    </style>
+
+    <style name="NumberProgressBar.Horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="NumberProgressBar.Horizontal.Red">
+        <item name="numberTextColor">@color/progress_bar_color_red</item>
+        <item name="reachedBarColor">@color/progress_bar_color_red</item>
+        <item name="unreachedBarColor">@color/progress_bar_unreached_bar_color_default_grey</item>
+    </style>
+
+    <style name="NumberProgressBar.Horizontal.Blue">
+        <item name="numberTextColor">@color/progress_bar_color_blue</item>
+        <item name="reachedBarColor">@color/progress_bar_color_blue</item>
+        <item name="unreachedBarColor">@color/progress_bar_unreached_bar_color_default_grey</item>
+    </style>
+
+    <style name="NumberProgressBar.Horizontal.Yellow">
+        <item name="numberTextColor">@color/progress_bar_color_yellow</item>
+        <item name="reachedBarColor">@color/progress_bar_color_yellow</item>
+        <item name="unreachedBarColor">@color/progress_bar_unreached_bar_color_default_grey</item>
+    </style>
+
+    <style name="NumberProgressBar.Circle">
+        <item name="minWidth">30dp</item>
+        <item name="minHeight">30dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="progressBarShape">circle</item>
+    </style>
+
+    <style name="NumberProgressBar.Circle.Yellow">
+        <item name="minWidth">48dp</item>
+        <item name="minHeight">48dp</item>
+        <item name="numberTextColor">@color/progress_bar_color_yellow</item>
+        <item name="reachedBarColor">@color/progress_bar_color_yellow</item>
+        <item name="unreachedBarColor">@color/progress_bar_unreached_bar_color_default_grey</item>
+    </style>
+
+    <style name="NumberProgressBar.Circle.Blue">
+        <item name="numberTextColor">@color/progress_bar_color_blue</item>
+        <item name="reachedBarColor">@color/progress_bar_color_blue</item>
+        <item name="unreachedBarColor">@color/progress_bar_unreached_bar_color_default_grey</item>
+    </style>
+
+    <style name="NumberProgressBar.Circle.Red">
+        <item name="numberTextColor">@color/progress_bar_color_red</item>
+        <item name="reachedBarColor">@color/progress_bar_color_red</item>
+        <item name="unreachedBarColor">@color/progress_bar_unreached_bar_color_default_grey</item>
+    </style>
+
+</resources>

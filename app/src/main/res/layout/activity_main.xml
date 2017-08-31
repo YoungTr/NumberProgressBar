@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
+    android:background="@color/colorPrimary"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -13,30 +14,35 @@
     tools:context="com.youngtr.numberprogressbar.example.MainActivity">
 
     <com.youngtr.numberprogressbar.NumberProgressBar
-        android:id="@+id/progress_horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:currentValue="0"
-        app:numberTextColor="#E74C3C"
-        app:numberTextSize="10sp"
-        app:reachedBarColor="#E74C3C"
-        app:reachedBarHeight="1.5dp"
-        app:textOffset="3dp"
-        app:unreachedBarColor="#CCCCCC"
-        app:unreachedBarHeight="0.75dp" />
+        android:id="@+id/progress_horizontal_red"
+        style="@style/NumberProgressBar.Horizontal.Red" />
 
     <com.youngtr.numberprogressbar.NumberProgressBar
-        android:id="@+id/progress_circle"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        app:currentValue="0"
-        app:numberTextColor="@color/colorAccent"
-        app:numberTextSize="10sp"
-        app:progressBarShape="circle"
-        app:reachedBarColor="@color/colorAccent"
-        app:reachedBarHeight="1.5dp"
-        app:textOffset="3dp"
-        app:unreachedBarColor="#CCCCCC"
-        app:unreachedBarHeight="0.75dp" />
+        android:id="@+id/progress_horizontal_blue"
+        style="@style/NumberProgressBar.Horizontal.Blue"
+        android:layout_marginTop="20dp" />
+
+    <com.youngtr.numberprogressbar.NumberProgressBar
+        android:id="@+id/progress_horizontal_yellow"
+        style="@style/NumberProgressBar.Horizontal.Yellow"
+        android:layout_marginTop="20dp"
+        app:numberTextVisibility="invisible" />
+
+    <com.youngtr.numberprogressbar.NumberProgressBar
+        android:id="@+id/progress_circle_blue"
+        style="@style/NumberProgressBar.Circle.Blue"
+        android:layout_marginTop="20dp"
+        app:numberTextVisibility="invisible" />
+
+    <com.youngtr.numberprogressbar.NumberProgressBar
+        android:id="@+id/progress_circle_red"
+        style="@style/NumberProgressBar.Circle.Red"
+        android:layout_marginTop="20dp" />
+
+    <com.youngtr.numberprogressbar.NumberProgressBar
+        android:id="@+id/progress_circle_yellow"
+        style="@style/NumberProgressBar.Circle.Yellow"
+        app:numberTextSize="13sp"
+        android:layout_marginTop="20dp" />
 
 </LinearLayout>

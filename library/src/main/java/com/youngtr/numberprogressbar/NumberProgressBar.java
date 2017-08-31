@@ -218,9 +218,14 @@ public class NumberProgressBar extends View {
 
     private void calculateHorizontalWithoutTextRectF() {
         mReachedRecF.left = getPaddingLeft();
-        mReachedRecF.top = getHeight() / 2.0f - (mTextPaint.ascent() + mTextPaint.descent()) / 2.0f;
+        mReachedRecF.top = getHeight() / 2.0f - mReachedBarHeight / 2;
         mReachedRecF.right = (getWidth() - getPaddingLeft() - getPaddingRight()) / (getMax() * 1.0f) * getProgress() + getPaddingLeft();
         mReachedRecF.bottom = getHeight() / 2.0f + mReachedBarHeight / 2.0f;
+
+        mUnreachedRecF.left = mReachedRecF.right;
+        mUnreachedRecF.top = getHeight() / 2.0f - mUnreachedBarHeight / 2.0f;
+        mUnreachedRecF.right = getWidth() - getPaddingRight();
+        mUnreachedRecF.bottom = getHeight() / 2.0f + mUnreachedBarHeight / 2.0f;
     }
 
     private void calculateCircle() {
