@@ -5,12 +5,12 @@ A progress bar with both horizontal and circular styles. Inspired by [daimajia](
 
 ## Demo
 
-![NumberProgressBar](https://github.com/YoungTr/NumberProgressBar/blob/master/gif/demo.gif)
+![NumberProgressBar](https://github.com/YoungTr/NumberProgressBar/blob/master/gif/progress.gif)
 
 -----
 
-
-###Usage
+        
+Usage
 ----
 
 #### Gradle
